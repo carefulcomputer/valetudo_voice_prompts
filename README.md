@@ -4,4 +4,9 @@ Voice prompts for Valetudo open source software. These prompts are similar to Dr
 
 Other voice prompts will be added in future. First to kick off repo is Terminator voice (T2 folder)
 
+Contributions are welcome. 
+Here is list of prompts compiled by @ccoors
+
+https://github.com/ccoors/dreame_voice_packs/blob/main/sound_list.csv
+
 License: Can use for personal purposes. No commerical use.
