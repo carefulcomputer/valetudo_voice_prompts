@@ -1,6 +1,6 @@
 # Valetudo Voice Prompts
 
-Voice prompts for [Valetudo](https://github.com/Hypfer/Valetudo) open source software. These prompts are similar to Dreame vacuum so may not work for other devices due to different filenames/prompts. Feel free to fork and use for other vacuums.
+Voice prompts for [Valetudo](https://github.com/Hypfer/Valetudo) open source software. These prompts can used on Dreame vacuum so may not work for other devices due to different filenames/prompts. Feel free to fork and use for other vacuums.
 
 Other voice prompts will be added in future. First to kick off repo is Terminator voice (T2 folder)
 
