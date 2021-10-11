@@ -10,5 +10,5 @@ jobs:
       with:
         type: 'tar'
         directory: 'T2'
-        filename: 'T2.tar.gz'
+        filename: '/tmp/T2.tar.gz'
         exclusions: '*.git*'
