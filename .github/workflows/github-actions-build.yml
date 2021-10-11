@@ -1,4 +1,4 @@
-name: Create Archive
+name: Create archive and release
 on: [push]
 jobs:
   build:
