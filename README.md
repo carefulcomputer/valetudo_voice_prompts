@@ -24,5 +24,5 @@ Here are steps:
 1) Refer to list of prompts compiled by @ccoors here https://github.com/ccoors/dreame_voice_packs/blob/main/sound_list.csv
 2) Change the wordings to whatever you want your robot to say (for e.g. I removed all 'please' from T2 voice. Terminator will never say please :) ). Try to keep them close to original wordings since otherwise it will be hard to undrestand the actual robot status.
 3) Now you can do it two ways -
-  a) Hard way-  Use https://vo.codes/ (or any other TTS service) to genreate sound files. Once you get the wave files from those services, you will need to transcode them to ogg format at mono, 16000hz. Once you have all ogg files, then tar.gz them , calculate md5 and upload to valetudo.
-  b) Easy way- Open an issue with all text prompts and the name the specific celebrity from https://vo.codes/ and I will generate all the voice prompts, md5 and release it here so everyone can use them.
+  * Hard way-  Use https://vo.codes/ (or any other TTS service) to genreate sound files. Once you get the wave files from those services, you will need to transcode them to ogg format at mono, 16000hz. Once you have all ogg files, then tar.gz them , calculate md5 and upload to valetudo.
+  * Easy way- Open an issue with all text prompts and the name the specific celebrity from https://vo.codes/ and I will generate all the voice prompts, md5 and release it here so everyone can use them.
