@@ -12,3 +12,7 @@ jobs:
         directory: 'T2'
         filename: '/tmp/T2.tar.gz'
         exclusions: '*.git*'
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "/tmp/T2.tar.gz"
+        token: ${{ secrets.GITHUB_TOKEN }}
