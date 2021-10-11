@@ -10,17 +10,17 @@ jobs:
       uses: mathieudutour/github-tag-action@v5.6
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}    
-    - name: Archive Release
+    - name: Archive
       uses: thedoctor0/zip-release@master
       with:
         type: 'tar'
         directory: 'T2'
-        filename: '/tmp/T2.tar.gz'
+        filename: 'T2.tar.gz'
         exclusions: '*.git*'
-    - uses: ncipollo/release-action@v1
+    - name : Release
+      uses: ncipollo/release-action@v1
       with:
         tag: ${{ steps.tag_version.outputs.new_tag }}
         name: Release ${{ steps.tag_version.outputs.new_tag }}
-        body: ${{ steps.tag_version.outputs.changelog }}
-        artifacts: "/tmp/T2.tar.gz"
+        artifacts: "T2.tar.gz"
         token: ${{ secrets.GITHUB_TOKEN }}
