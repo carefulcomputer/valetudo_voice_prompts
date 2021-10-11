@@ -18,4 +18,5 @@ jobs:
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "/tmp/T2.tar.gz"
+        tag : "release"
         token: ${{ secrets.GITHUB_TOKEN }}
