@@ -15,12 +15,12 @@ jobs:
       with:
         type: 'tar'
         directory: 'T2'
-        filename: './tmp/T2.tar.gz'
+        filename: '/build/T2.tar.gz'
         exclusions: '*.git*'
     - name : Release
       uses: ncipollo/release-action@v1
       with:
         tag: ${{ steps.tag_version.outputs.new_tag }}
         name: Release ${{ steps.tag_version.outputs.new_tag }}
-        artifacts: "./tmp/T2.tar.gz"
+        artifacts: "/build/T2.tar.gz"
         token: ${{ secrets.GITHUB_TOKEN }}
