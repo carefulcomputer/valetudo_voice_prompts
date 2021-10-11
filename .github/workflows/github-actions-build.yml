@@ -17,10 +17,13 @@ jobs:
         directory: 'T2'
         filename: '/tmp/T2.tar.gz'
         exclusions: '*.git*'
+    - name : generate hash
+      id : hashgenerator
+      run: md5sum /tmp/T2.tar.gz | awk '{print $1}' > /tmp/md5sum.txt
     - name : Release
       uses: ncipollo/release-action@v1
       with:
         tag: ${{ steps.tag_version.outputs.new_tag }}
         name: Release ${{ steps.tag_version.outputs.new_tag }}
-        artifacts: "/tmp/T2.tar.gz"
+        artifacts: "/tmp/T2.tar.gz,/tmp/md5sum.txt"
         token: ${{ secrets.GITHUB_TOKEN }}
