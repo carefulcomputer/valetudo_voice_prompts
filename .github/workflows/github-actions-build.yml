@@ -10,5 +10,5 @@ jobs:
       with:
         type: 'tar'
         directory: 'T2'
-        filename: './release/T2.tar.gz'
+        filename: '../release/T2.tar.gz'
         exclusions: '*.git* /*node_modules/* .editorconfig'
